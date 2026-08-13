@@ -29,7 +29,7 @@ const Certificates = () => {
                     </p>
 
                     <h2 className = 'text-4xl md:text-5xl font-extrabold text-white'>
-                        Certifications. 
+                        Certifications
                     </h2>
                 </div>
 

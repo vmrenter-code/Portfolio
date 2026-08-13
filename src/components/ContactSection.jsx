@@ -50,7 +50,7 @@ const ContactSection = () => {
                 <div className = 'grid md:grid-cols-2 gap-8'>
                     <div>
                         <p className = 'text-gray-400 mb-8 leading-relaxed'>
-                            Lorem ispum dolor sit amet
+                            Feel free to reach out
                         </p>
                         <div className = 'space-y-6'>
                             {contactInfo.map((info) => {

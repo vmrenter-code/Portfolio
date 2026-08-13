@@ -2,6 +2,7 @@ import React from 'react'
 import fluentHands from '../assets/fluentHands.png';
 import uniHousing from '../assets/uniHousing.png';
 import owlet from '../assets/owlet.png';
+import HackCoast from '../assets/HackCoast.png'
 
 
 const Projects = () =>  {
@@ -16,7 +17,7 @@ const Projects = () =>  {
         },
         {
             id: 2,
-            image: proj2,
+            //image: proj2,
             title: 'Fitness Tracker',
             desc: 'Track workouts and nutrition ',
             tech: ['React Native', 'Firebase']
@@ -37,6 +38,14 @@ const Projects = () =>  {
             tech: ['React', 'Firebase', 'Node.js', 'AWS', 'Prisma', 'PostgreSQL'],
             link: 'https://owlet-gilt.vercel.app/'
         },
+        {
+            id: 5,
+            image: HackCoast,
+            title: 'PoP Demand Intelligence Dashboard3',
+            desc: 'A demand-planning dashboard for PoP (a food/confections distributor) that reconstructs "true" product demand from raw sales data — surfacing volume hidden by stockouts and out-of-stock periods — and turns that cleaned signal into actionable inventory decisions. It gives buyers a single view across four workflows',
+            tech: ['React', 'Vite', 'Python'],
+            link: 'https://owlet-gilt.vercel.app/'
+        },
 
 
 
@@ -45,8 +54,8 @@ const Projects = () =>  {
     return(
         <section className = 'py-16 bg-gray-900' id='projects'>
             <div className = 'container mx-auto px-4 max-w-7xl'> 
-                <h2 className = 'text-4xl md:text-5xl font-extrabol text-white'>
-                    Projects.
+                <h2 className = 'text-4xl md:text-5xl font-bold text-white'>
+                    Projects
                 </h2>
                 <div className = 'w-28 h-1 bg-primary mx-auto mt-2 rounded-2xl'>
                 </div>
@@ -64,7 +73,7 @@ const Projects = () =>  {
                             <img src = {project.image} alt = {project.title}
                             className = 'w-full h-44 object-cover hover:opacity-90 transition-opacity duration-300' />
                             <div className='p-4'>
-                                <h3 className = 'text-lg font-semibold text-white group-hover:text-primary transiton-colors'>
+                                <h3 className = 'text-lg font-bold text-white group-hover:text-primary transiton-colors'>
                                     {project.title}
                                 </h3>
                                 <p className = 'text-gray-400 text-sm mt-1'>

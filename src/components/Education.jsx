@@ -8,7 +8,7 @@ const Education = () => {
             id: 1,
             degree: 'Bachelor of Science in Software Engineering',
             institution: "University of California Irvine",
-            duration: "2024 - 2026"
+            duration: "2024 - 2027"
             
         },
         {

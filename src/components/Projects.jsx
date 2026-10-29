@@ -36,17 +36,19 @@ const Projects = () =>  {
         },
         {
             id: 4,
-            title: 'Fitness Tracker',
-            desc: 'Track workouts and nutrition ',
-            tech: ['React Native', 'Firebase']
-        },
-        {
-            id: 5,
             image: HackCoast,
             title: 'PoP Demand Intelligence Dashboard',
             desc: 'A demand-planning dashboard for PoP (a food/confections distributor) that reconstructs "true" product demand from raw sales data — surfacing volume hidden by stockouts and out-of-stock periods — and turns that cleaned signal into actionable inventory decisions. It gives buyers a single view across four workflows',
             tech: ['React', 'Vite', 'Python'],
             link: 'https://hack-the-coast-eight.vercel.app/'
+            
+        },
+        {
+            id: 5,
+            title: 'Fitness Tracker',
+            desc: 'Track workouts and nutrition ',
+            tech: ['React Native', 'Firebase']
+            
         },
 
 
@@ -72,8 +74,19 @@ const Projects = () =>  {
                         return (
                         <CardTag key = {project.id} {...cardProps}
                         className = 'bg-gray-800 rounded-lg overflow-hidden shadow-sm hover:shadow-lg hover:scale-105 transition-all duration 300'>
-                            <img src = {project.image} alt = {project.title}
-                            className = 'w-full h-44 object-cover hover:opacity-90 transition-opacity duration-300' />
+                            {project.image ? (
+                                <img src = {project.image} alt = {project.title}
+                                className = 'w-full h-44 object-cover hover:opacity-90 transition-opacity duration-300' />
+                            ) : (
+                                <div className = 'w-full h-44 flex flex-col items-center justify-center bg-gray-700 border-b-2 border-dashed border-primary'>
+                                    <span className = 'text-xl font-bold text-white'>
+                                        Under Development
+                                    </span>
+                                    <span className = 'text-sm text-gray-400 mt-1'>
+                                        Coming soon
+                                    </span>
+                                </div>
+                            )}
                             <div className='p-4'>
                                 <h3 className = 'text-lg font-bold text-white group-hover:text-primary transiton-colors'>
                                     {project.title}

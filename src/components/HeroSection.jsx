@@ -29,7 +29,7 @@ const HeroSection = () => {
                         </div>
                         <p className = 'text-gray-300 pt-8 text-center md:text-left mx-auto max-w-xl'>
                             I'm a Software Engineering student at UC Irvine. My work spans full-stack development, embedded systems, and applied machine learning.
-                            Outside of codeing, you'll probably find me in the gym, playing soccer, or on the mats
+                            Outside of coding, you'll probably find me in the gym, playing soccer, or on the mats
                         </p>
                         <div className = 'flex items-center gap-3 pt-9 flex-col sm:flex-row sm:w-max mx-auto md:mx-0'>
                             <a href='#projects' className='px-6 md:px-7 py-3 rounded-full relative group w-full sm:w-max flex justify-center'>

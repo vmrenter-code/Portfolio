@@ -18,7 +18,7 @@ const AboutSection = () => {
                         <br /> <br />
                         I like building things that work in the real world. Whether it's a mechanic booking platform with Stripe payments, 
                         an AI-powered fitness app, or research under Professor Hao Ji at Cal Poly Pomona. I gravitate toward problems where software meets something tangible.
-                        I'm actively looking for internship opportunities where I can keep doing exactly that.
+                        I'm actively looking for full time opportunities where I can keep doing exactly that.
                     </p>
 
                     <div className='grid grid-cols-3 gap-6 max-w-xl'>

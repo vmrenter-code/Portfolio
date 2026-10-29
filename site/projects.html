@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects | Victor Renteria</title>
+  <meta name="description" content="Projects by Victor Renteria: ASL learning with computer vision, student housing search, child developmental screening, and demand forecasting.">
+  <!-- Flag that JavaScript is available so enhancements (menu, filters, animations) can switch on -->
+  <script>document.documentElement.className = "js";</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Site header and primary navigation ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">VR</span>
+        Victor Renteria
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="fa-solid fa-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Open menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#experience">Experience</a></li>
+          <li><a href="index.html#skills">Skills</a></li>
+          <li><a href="projects.html" aria-current="page">Projects</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Page introduction ===== -->
+    <section class="page-header" aria-labelledby="page-title">
+      <div class="container">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li><span aria-current="page">Projects</span></li>
+          </ol>
+        </nav>
+        <p class="eyebrow">Portfolio</p>
+        <h1 id="page-title">Things I've <span class="accent">built</span></h1>
+        <p class="lead">
+          Hackathon builds, class projects and side projects, from computer vision in the browser
+          to mobile apps and data dashboards. Each card links to a live version you can try.
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Project cards ===== -->
+    <section class="section" aria-labelledby="all-projects-title">
+      <div class="container">
+        <h2 id="all-projects-title" class="visually-hidden">All projects</h2>
+
+        <!-- Filter bar is hidden until JavaScript runs, since it does nothing without it -->
+        <div class="filters" role="group" aria-label="Filter projects by category" hidden>
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="web" aria-pressed="false">Web</button>
+          <button type="button" data-filter="mobile" aria-pressed="false">Mobile</button>
+          <button type="button" data-filter="ml" aria-pressed="false">Machine learning</button>
+          <button type="button" data-filter="data" aria-pressed="false">Data</button>
+        </div>
+        <p id="filter-status" class="filter-status" role="status"></p>
+
+        <div class="project-grid">
+          <article class="project-card reveal" data-tags="web ml">
+            <img src="images/fluentHands.jpg" width="1200" height="643"
+                 alt="Fluent Hands home screen: neon city background with Practice, Blitz and Words lesson nodes">
+            <div class="project-body">
+              <p class="project-type">Web app · Machine learning</p>
+              <h3>Fluent Hands</h3>
+              <p>
+                A full-stack American Sign Language learning app that makes fingerspelling practice
+                interactive instead of static. Hand tracking in the browser checks each letter as you sign it.
+              </p>
+              <ul class="chips chips-small">
+                <li>React</li>
+                <li>Vite</li>
+                <li>Node.js</li>
+                <li>MediaPipe</li>
+                <li>TensorFlow</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://fluent-hands.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo<span class="visually-hidden"> of Fluent Hands (opens in a new tab)</span><span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="web">
+            <img src="images/uniHousing.jpg" width="1200" height="646" loading="lazy"
+                 alt="UniHousing landing page with a search bar, popular University of California campuses, and feature cards">
+            <div class="project-body">
+              <p class="project-type">Web app</p>
+              <h3>UniHousing</h3>
+              <p>
+                A housing search for university students, with interactive map-based filtering by
+                price, room count and distance to campus.
+              </p>
+              <ul class="chips chips-small">
+                <li>React</li>
+                <li>Node.js</li>
+                <li>MongoDB</li>
+                <li>Leaflet</li>
+                <li>bcrypt</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://d3ii4vzsvf7f2x.cloudfront.net/" target="_blank" rel="noopener noreferrer">Live demo<span class="visually-hidden"> of UniHousing (opens in a new tab)</span><span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="mobile web">
+            <img src="images/owlet.jpg" width="1200" height="648" loading="lazy"
+                 alt="Owlet home screen with a Begin Screening button, recent screening history, and Learn More cards">
+            <div class="project-body">
+              <p class="project-type">Mobile + web app</p>
+              <h3>Owlet</h3>
+              <p>
+                A cross-platform app for at-home developmental screening of children. Parents create a
+                profile for their child and complete guided, video-recorded screening sessions. Built
+                mobile-first with React Native and Expo, plus a web version so it can be demoed without an app store install.
+              </p>
+              <ul class="chips chips-small">
+                <li>React Native</li>
+                <li>Firebase</li>
+                <li>Node.js</li>
+                <li>Prisma</li>
+                <li>PostgreSQL</li>
+                <li>AWS</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://owlet-gilt.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo<span class="visually-hidden"> of Owlet (opens in a new tab)</span><span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="web data">
+            <img src="images/HackCoast.jpg" width="1200" height="649" loading="lazy"
+                 alt="PoP dashboard showing SKU totals and a bar chart comparing raw and cleaned demand">
+            <div class="project-body">
+              <p class="project-type">Hackathon · Data</p>
+              <h3>PoP Demand Intelligence</h3>
+              <p>
+                A demand-planning dashboard for PoP, a food and confections distributor. It reconstructs
+                true product demand from raw sales data, surfacing volume hidden by stockouts, and turns
+                that signal into inventory decisions.
+              </p>
+              <ul class="chips chips-small">
+                <li>React</li>
+                <li>Vite</li>
+                <li>Python</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://hack-the-coast-eight.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo<span class="visually-hidden"> of PoP Demand Intelligence (opens in a new tab)</span><span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-tags="mobile">
+            <div class="project-placeholder">
+              <span class="fa-solid fa-dumbbell" aria-hidden="true"></span>
+            </div>
+            <div class="project-body">
+              <p class="project-type">Mobile app</p>
+              <h3>Fitness Tracker</h3>
+              <p>A mobile app for tracking workouts and nutrition.</p>
+              <ul class="chips chips-small">
+                <li>React Native</li>
+                <li>Firebase</li>
+              </ul>
+              <div class="project-links">
+                <span class="badge-wip">In progress</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Comparison table ===== -->
+    <section class="section section-alt" aria-labelledby="glance-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Side by side</p>
+          <h2 id="glance-title">Projects at a <span class="accent">glance</span></h2>
+        </div>
+        <!-- Scrollable region so the table never widens the page on phones -->
+        <div class="table-wrap" role="region" aria-labelledby="glance-caption" tabindex="0">
+          <table class="data-table">
+            <caption id="glance-caption">Platform, technology stack and status of each project</caption>
+            <thead>
+              <tr>
+                <th scope="col">Project</th>
+                <th scope="col">Platform</th>
+                <th scope="col">Front end</th>
+                <th scope="col">Back end &amp; data</th>
+                <th scope="col">Status</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">Fluent Hands</th>
+                <td>Web</td>
+                <td>React, Vite</td>
+                <td>Node.js, MediaPipe, TensorFlow</td>
+                <td>Live</td>
+              </tr>
+              <tr>
+                <th scope="row">UniHousing</th>
+                <td>Web</td>
+                <td>React, Leaflet</td>
+                <td>Node.js, MongoDB, bcrypt</td>
+                <td>Live</td>
+              </tr>
+              <tr>
+                <th scope="row">Owlet</th>
+                <td>iOS, Android &amp; web</td>
+                <td>React Native, Expo</td>
+                <td>Node.js, Firebase, Prisma, PostgreSQL, AWS</td>
+                <td>Live</td>
+              </tr>
+              <tr>
+                <th scope="row">PoP Demand Intelligence</th>
+                <td>Web</td>
+                <td>React, Vite</td>
+                <td>Python</td>
+                <td>Live</td>
+              </tr>
+              <tr>
+                <th scope="row">Fitness Tracker</th>
+                <td>Mobile</td>
+                <td>React Native</td>
+                <td>Firebase</td>
+                <td>In progress</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <p class="section-cta">
+          <a class="btn btn-primary" href="index.html#contact">
+            <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+            Ask me about a project
+          </a>
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Victor Renteria. Built by hand with HTML, CSS and JavaScript.</p>
+      <ul class="plain social-links">
+        <li>
+          <a href="https://www.linkedin.com/in/victor-m-renteria953" target="_blank" rel="noopener noreferrer">
+            <span class="fa-brands fa-linkedin-in" aria-hidden="true"></span>
+            <span class="visually-hidden">LinkedIn (opens in a new tab)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/vmrenter-code" target="_blank" rel="noopener noreferrer">
+            <span class="fa-brands fa-github" aria-hidden="true"></span>
+            <span class="visually-hidden">GitHub (opens in a new tab)</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:vmrenter@uci.edu">
+            <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+            <span class="visually-hidden">Email Victor</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

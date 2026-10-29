@@ -4,7 +4,7 @@ import HeadShot from '../assets/HeadShot.jpg';
 
 const HeroSection = () => {
     return ( 
-        <section className = 'realtive w-full' data-aos='zoom-in-up' >
+        <section className = 'relative w-full' data-aos='zoom-in-up' >
             <div className='absolute top-0 inset-x-0 h-64 flex items-start'>
                 <div className='h-24 w-2/3 bg-linear-to-br from-[#0c7fac] 
                 blur-2xl invisible opacity-40' 
@@ -59,10 +59,10 @@ const HeroSection = () => {
                         </div>
                     </div>
                     <div className='flex items-center justify-center'>
-                        <div className='flex w-full h-[40vh] max-h-50 md:h-full md:max-h-none items-center justify-center relative'>
+                        <div className='flex w-full md:h-full items-center justify-center relative'>
                             <div className='absolute z-0 w-5/6 right-0 h-[calc(80%+20px)] bg-linear-to-r opacity-25 from-[#0c64ac] to-primary blur-2xl'>
                             </div>
-                            <div className='relative z-10 shadow-lg border border-cyan-500 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] overflow-hidden max-w-xs lg:max-w-sm'>
+                            <div className='relative z-10 shadow-lg border border-cyan-500 rounded-[30%_70%_70%_30%/30%_30%_70%_70%] overflow-hidden max-w-60 sm:max-w-xs lg:max-w-sm'>
                                 <img
                                 src={HeadShot}
                                 alt= "Hero"

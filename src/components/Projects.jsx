@@ -8,6 +8,7 @@ import HackCoast from '../assets/HackCoast.png'
 const Projects = () =>  {
     const projects = [
         {
+            
             id: 1,
             image: fluentHands,
             title: 'Fluent Hands',
@@ -18,9 +19,12 @@ const Projects = () =>  {
         {
             id: 2,
             //image: proj2,
-            title: 'Fitness Tracker',
-            desc: 'Track workouts and nutrition ',
-            tech: ['React Native', 'Firebase']
+            
+            image: owlet,
+            title: 'Owlet',
+            desc: 'Owlet is a cross-platform mobile and web application for at-home developmental screening of children. Parents create a profile for their child, complete guided video-recorded screening sessions Built mobile-first with React Native/Expo, with a web version deployed for easy demoing without app store installs.',
+            tech: ['React', 'Firebase', 'Node.js', 'AWS', 'Prisma', 'PostgreSQL'],
+            link: 'https://owlet-gilt.vercel.app/'
         },
         {
             id: 3,
@@ -32,19 +36,17 @@ const Projects = () =>  {
         },
         {
             id: 4,
-            image: owlet,
-            title: 'Owlet',
-            desc: 'Owlet is a cross-platform mobile and web application for at-home developmental screening of children. Parents create a profile for their child, complete guided video-recorded screening sessions Built mobile-first with React Native/Expo, with a web version deployed for easy demoing without app store installs.',
-            tech: ['React', 'Firebase', 'Node.js', 'AWS', 'Prisma', 'PostgreSQL'],
-            link: 'https://owlet-gilt.vercel.app/'
+            title: 'Fitness Tracker',
+            desc: 'Track workouts and nutrition ',
+            tech: ['React Native', 'Firebase']
         },
         {
             id: 5,
             image: HackCoast,
-            title: 'PoP Demand Intelligence Dashboard3',
+            title: 'PoP Demand Intelligence Dashboard',
             desc: 'A demand-planning dashboard for PoP (a food/confections distributor) that reconstructs "true" product demand from raw sales data — surfacing volume hidden by stockouts and out-of-stock periods — and turns that cleaned signal into actionable inventory decisions. It gives buyers a single view across four workflows',
             tech: ['React', 'Vite', 'Python'],
-            link: 'https://owlet-gilt.vercel.app/'
+            link: 'https://hack-the-coast-eight.vercel.app/'
         },
 
 

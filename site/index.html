@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Victor Renteria | Software Engineer</title>
+  <meta name="description" content="Portfolio of Victor Renteria, a UC Irvine Software Engineering student building full-stack web apps, mobile apps, and applied machine learning projects.">
+  <!-- Flag that JavaScript is available so enhancements (menu, animations) can switch on -->
+  <script>document.documentElement.className = "js";</script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Space+Grotesk:wght@500;600;700&amp;display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" referrerpolicy="no-referrer">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to main content</a>
+
+  <!-- ===== Site header and primary navigation ===== -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html">
+        <span class="brand-mark" aria-hidden="true">VR</span>
+        Victor Renteria
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span class="fa-solid fa-bars" aria-hidden="true"></span>
+        <span class="visually-hidden">Open menu</span>
+      </button>
+      <nav id="site-nav" class="site-nav" aria-label="Primary">
+        <ul>
+          <li><a href="index.html" aria-current="page">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-glow"></div>
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="status-pill"><span class="status-dot"></span>Open to software engineering internships</p>
+          <h1 id="hero-title">Hi, I'm <span class="accent">Victor Renteria</span></h1>
+          <p class="lead">
+            I'm a Software Engineering student at UC Irvine. My work spans full-stack development,
+            embedded systems, and applied machine learning. Outside of coding, you'll probably find me
+            in the gym, playing soccer, or on the mats.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="projects.html">
+              <span class="fa-solid fa-folder-open" aria-hidden="true"></span>
+              See my projects
+            </a>
+            <a class="btn btn-outline" href="files/victor-renteria-resume.pdf" download>
+              <span class="fa-solid fa-download" aria-hidden="true"></span>
+              Download résumé (PDF)
+            </a>
+          </div>
+          <ul class="plain social-links">
+            <li>
+              <a href="https://www.linkedin.com/in/victor-m-renteria953" target="_blank" rel="noopener noreferrer">
+                <span class="fa-brands fa-linkedin-in" aria-hidden="true"></span>
+                <span class="visually-hidden">LinkedIn (opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/vmrenter-code" target="_blank" rel="noopener noreferrer">
+                <span class="fa-brands fa-github" aria-hidden="true"></span>
+                <span class="visually-hidden">GitHub (opens in a new tab)</span>
+              </a>
+            </li>
+            <li>
+              <a href="mailto:vmrenter@uci.edu">
+                <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+                <span class="visually-hidden">Email Victor</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="hero-photo">
+          <img src="images/headshot.jpg" width="675" height="900"
+               alt="Victor Renteria in a navy suit and gold tie, standing in front of the University of California seal">
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section id="about" class="section section-alt" aria-labelledby="about-title">
+      <div class="container about-grid">
+        <div class="reveal">
+          <p class="eyebrow">About me</p>
+          <h2 id="about-title">Software that meets the <span class="accent">real world</span></h2>
+          <p class="lead">
+            I have a background in full-stack web development, mobile engineering, computer vision,
+            and machine learning. I've shipped React web apps, built React Native mobile experiences
+            with BLE hardware integration, and trained gesture recognition models reaching 92% accuracy.
+            I'm drawn to the full picture, from the UI to the backend to the hardware underneath.
+          </p>
+          <p class="lead">
+            Whether it's a mechanic booking platform with Stripe payments, an AI-powered fitness app,
+            or research under Professor Hao Ji at Cal Poly Pomona, I gravitate toward problems where
+            software meets something tangible. I'm looking for internships where I can keep doing exactly that.
+          </p>
+          <dl class="stats">
+            <div>
+              <dt>Projects</dt>
+              <dd>6+</dd>
+            </div>
+            <div>
+              <dt>Certifications</dt>
+              <dd>2</dd>
+            </div>
+            <div>
+              <dt>Years coding</dt>
+              <dd>4+</dd>
+            </div>
+          </dl>
+        </div>
+        <figure class="photo-frame reveal">
+          <div class="photo-offset">
+            <img src="images/about.jpg" width="675" height="900" loading="lazy"
+                 alt="Victor and three teammates in matching IrvineHacks shirts, one holding a laptop showing their project">
+          </div>
+          <figcaption>My team at IrvineHacks.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section id="experience" class="section" aria-labelledby="experience-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Where I've worked</p>
+          <h2 id="experience-title">Work <span class="accent">experience</span></h2>
+        </div>
+        <ol class="timeline">
+          <li class="reveal">
+            <article class="card">
+              <h3>AI / Machine Learning Researcher</h3>
+              <p class="meta">
+                <span><span class="fa-solid fa-building-columns" aria-hidden="true"></span>Cal Poly Pomona</span>
+                <span><span class="fa-solid fa-calendar" aria-hidden="true"></span>June 2023 – August 2023</span>
+              </p>
+              <p>Summer research in applied machine learning under Professor Hao Ji.</p>
+            </article>
+          </li>
+          <li class="reveal">
+            <article class="card">
+              <h3>STEM Tutor</h3>
+              <p class="meta">
+                <span><span class="fa-solid fa-building-columns" aria-hidden="true"></span>Rio Hondo College</span>
+                <span><span class="fa-solid fa-calendar" aria-hidden="true"></span>August 2023 – August 2024</span>
+              </p>
+              <p>Tutored community college students in STEM courses.</p>
+            </article>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- ===== Skills ===== -->
+    <section id="skills" class="section section-alt" aria-labelledby="skills-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Toolbox</p>
+          <h2 id="skills-title">Technical <span class="accent">skills</span></h2>
+        </div>
+        <div class="skills-grid">
+          <div class="card reveal">
+            <h3><span class="icon-badge"><span class="fa-solid fa-code" aria-hidden="true"></span></span>Languages</h3>
+            <ul class="chips">
+              <li>C++</li>
+              <li>JavaScript</li>
+              <li>Python</li>
+              <li>SQL</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3><span class="icon-badge"><span class="fa-solid fa-layer-group" aria-hidden="true"></span></span>Frameworks</h3>
+            <ul class="chips">
+              <li>React</li>
+              <li>React Native</li>
+              <li>Node.js</li>
+              <li>Vite</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3><span class="icon-badge"><span class="fa-solid fa-database" aria-hidden="true"></span></span>Data &amp; cloud</h3>
+            <ul class="chips">
+              <li>PostgreSQL</li>
+              <li>MongoDB</li>
+              <li>Prisma</li>
+              <li>Firebase</li>
+              <li>AWS</li>
+            </ul>
+          </div>
+          <div class="card reveal">
+            <h3><span class="icon-badge"><span class="fa-solid fa-brain" aria-hidden="true"></span></span>ML &amp; tools</h3>
+            <ul class="chips">
+              <li>TensorFlow</li>
+              <li>MediaPipe</li>
+              <li>Git</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Featured projects (full list lives on projects.html) ===== -->
+    <section id="featured" class="section" aria-labelledby="featured-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Selected work</p>
+          <h2 id="featured-title">Featured <span class="accent">projects</span></h2>
+        </div>
+        <div class="project-grid">
+          <article class="project-card reveal">
+            <img src="images/fluentHands.jpg" width="1200" height="643" loading="lazy"
+                 alt="Fluent Hands home screen: neon city background with Practice, Blitz and Words lesson nodes">
+            <div class="project-body">
+              <p class="project-type">Web app · Machine learning</p>
+              <h3>Fluent Hands</h3>
+              <p>An ASL learning app that uses your webcam to check fingerspelling in real time.</p>
+              <ul class="chips chips-small">
+                <li>React</li>
+                <li>MediaPipe</li>
+                <li>TensorFlow</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://fluent-hands.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo<span class="visually-hidden"> of Fluent Hands (opens in a new tab)</span><span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="images/owlet.jpg" width="1200" height="648" loading="lazy"
+                 alt="Owlet home screen with a Begin Screening button, recent screening history, and Learn More cards">
+            <div class="project-body">
+              <p class="project-type">Mobile + web app</p>
+              <h3>Owlet</h3>
+              <p>At-home developmental screening for children through guided, video-recorded sessions.</p>
+              <ul class="chips chips-small">
+                <li>React Native</li>
+                <li>PostgreSQL</li>
+                <li>AWS</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://owlet-gilt.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo<span class="visually-hidden"> of Owlet (opens in a new tab)</span><span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+          <article class="project-card reveal">
+            <img src="images/HackCoast.jpg" width="1200" height="649" loading="lazy"
+                 alt="PoP dashboard showing SKU totals and a bar chart comparing raw and cleaned demand">
+            <div class="project-body">
+              <p class="project-type">Hackathon · Data</p>
+              <h3>PoP Demand Intelligence</h3>
+              <p>A dashboard that recovers demand hidden by stockouts and turns it into reorder decisions.</p>
+              <ul class="chips chips-small">
+                <li>React</li>
+                <li>Python</li>
+              </ul>
+              <div class="project-links">
+                <a href="https://hack-the-coast-eight.vercel.app/" target="_blank" rel="noopener noreferrer">Live demo<span class="visually-hidden"> of PoP Demand Intelligence (opens in a new tab)</span><span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span></a>
+              </div>
+            </div>
+          </article>
+        </div>
+        <p class="section-cta">
+          <a class="btn btn-outline" href="projects.html">View all projects<span class="fa-solid fa-arrow-right" aria-hidden="true"></span></a>
+        </p>
+      </div>
+    </section>
+
+    <!-- ===== Education ===== -->
+    <section id="education" class="section section-alt" aria-labelledby="education-title">
+      <div class="container edu-grid">
+        <figure class="photo-frame reveal">
+          <div class="photo-offset">
+            <img src="images/education.jpg" width="675" height="900" loading="lazy"
+                 alt="Victor in a graduation cap and gown holding his diploma, standing between his parents at the ceremony">
+          </div>
+          <figcaption>Graduating from Rio Hondo College with my parents.</figcaption>
+        </figure>
+        <div>
+          <div class="section-head reveal">
+            <p class="eyebrow">Learning path</p>
+            <h2 id="education-title">Education</h2>
+          </div>
+          <div class="edu-list">
+            <article class="card edu-item reveal">
+              <span class="icon-badge"><span class="fa-solid fa-graduation-cap" aria-hidden="true"></span></span>
+              <div>
+                <h3>B.S. in Software Engineering</h3>
+                <p>University of California, Irvine</p>
+                <span class="date-pill">2024 – 2026</span>
+              </div>
+            </article>
+            <article class="card edu-item reveal">
+              <span class="icon-badge"><span class="fa-solid fa-graduation-cap" aria-hidden="true"></span></span>
+              <div>
+                <h3>A.S. in Computer Science</h3>
+                <p>Rio Hondo College</p>
+                <span class="date-pill">2021 – 2024</span>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Certifications ===== -->
+    <section id="certifications" class="section" aria-labelledby="certs-title">
+      <div class="container">
+        <div class="section-head reveal">
+          <p class="eyebrow">Achievements</p>
+          <h2 id="certs-title">Certifications</h2>
+        </div>
+        <div class="cert-grid">
+          <article class="card cert-card reveal">
+            <span class="icon-badge"><span class="fa-solid fa-shield-halved" aria-hidden="true"></span></span>
+            <h3>Cybersecurity 101</h3>
+            <p class="meta">
+              <span><span class="fa-solid fa-award" aria-hidden="true"></span>CodePath</span>
+              <span><span class="fa-solid fa-calendar" aria-hidden="true"></span>August 2025</span>
+            </p>
+            <p>Completed CodePath's Intro to Cybersecurity course.</p>
+            <a href="files/codepath-cybersecurity.pdf" target="_blank" rel="noopener noreferrer">View certificate<span class="visually-hidden"> for Cybersecurity 101 (PDF, opens in a new tab)</span><span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span></a>
+          </article>
+          <article class="card cert-card reveal">
+            <span class="icon-badge"><span class="fa-solid fa-flag-checkered" aria-hidden="true"></span></span>
+            <h3>DoD Cyber Sentinel Challenge</h3>
+            <p class="meta">
+              <span><span class="fa-solid fa-award" aria-hidden="true"></span>U.S. Department of Defense</span>
+              <span><span class="fa-solid fa-calendar" aria-hidden="true"></span>June 2025</span>
+            </p>
+            <p>A series of real-world capture-the-flag challenges built around the skills the DoD needs most.</p>
+            <a href="images/dod-certificate.png" target="_blank" rel="noopener noreferrer">View participant badge<span class="visually-hidden"> for the Cyber Sentinel Challenge (opens in a new tab)</span><span class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></span></a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Contact ===== -->
+    <section id="contact" class="section section-alt" aria-labelledby="contact-title">
+      <div class="container contact-grid">
+        <div class="reveal">
+          <p class="eyebrow">Get in touch</p>
+          <h2 id="contact-title">Let's <span class="accent">connect</span></h2>
+          <p class="lead">Recruiting for an internship, or want to build something together? Send me a message.</p>
+          <ul class="plain contact-list">
+            <li>
+              <span class="icon-badge"><span class="fa-solid fa-envelope" aria-hidden="true"></span></span>
+              <span><span class="label">Email</span><a class="value" href="mailto:vmrenter@uci.edu">vmrenter@uci.edu</a></span>
+            </li>
+            <li>
+              <span class="icon-badge"><span class="fa-brands fa-linkedin-in" aria-hidden="true"></span></span>
+              <span><span class="label">LinkedIn</span><a class="value" href="https://www.linkedin.com/in/victor-m-renteria953" target="_blank" rel="noopener noreferrer">victor-m-renteria953<span class="visually-hidden"> (opens in a new tab)</span></a></span>
+            </li>
+            <li>
+              <span class="icon-badge"><span class="fa-solid fa-phone" aria-hidden="true"></span></span>
+              <span><span class="label">Phone</span><a class="value" href="tel:+15623613361">(562) 361-3361</a></span>
+            </li>
+            <li>
+              <span class="icon-badge"><span class="fa-solid fa-location-dot" aria-hidden="true"></span></span>
+              <span><span class="label">Location</span><span class="value">Santa Fe Springs, California</span></span>
+            </li>
+          </ul>
+        </div>
+
+        <form id="contact-form" class="contact-form reveal" action="mailto:vmrenter@uci.edu" method="post" enctype="text/plain">
+          <p class="required-note">All fields are required.</p>
+          <div class="form-row">
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required>
+          </div>
+          <div class="form-row">
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="form-row">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+          </div>
+          <button class="btn btn-primary" type="submit">
+            <span class="fa-solid fa-paper-plane" aria-hidden="true"></span>
+            Send message
+          </button>
+          <p id="form-status" class="form-status" role="status"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Victor Renteria. Built by hand with HTML, CSS and JavaScript.</p>
+      <ul class="plain social-links">
+        <li>
+          <a href="https://www.linkedin.com/in/victor-m-renteria953" target="_blank" rel="noopener noreferrer">
+            <span class="fa-brands fa-linkedin-in" aria-hidden="true"></span>
+            <span class="visually-hidden">LinkedIn (opens in a new tab)</span>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/vmrenter-code" target="_blank" rel="noopener noreferrer">
+            <span class="fa-brands fa-github" aria-hidden="true"></span>
+            <span class="visually-hidden">GitHub (opens in a new tab)</span>
+          </a>
+        </li>
+        <li>
+          <a href="mailto:vmrenter@uci.edu">
+            <span class="fa-solid fa-envelope" aria-hidden="true"></span>
+            <span class="visually-hidden">Email Victor</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
